@@ -6,7 +6,7 @@ const App = () => {
     return (
         <div>
             <Title />
-            <main className="flex items-center justify-center">
+            <main className="flex min-h-[calc(100dvh-96px)] items-center justify-center">
                 <Omikuji />
             </main>
         </div>

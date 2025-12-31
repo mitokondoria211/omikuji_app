@@ -2,15 +2,15 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    background: #f2f2f2;
-    /* min-height: 100vh; */
-    display: flex;
+/* body { */
+/* margin: 0;
+    background: #f2f2f2; */
+/* min-height: 100vh; */
+/* display: flex;
     flex-direction: column;
-    font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
-    /* overflow: hidden; */
-}
-main {
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif; */
+/* overflow: hidden; */
+/* } */
+/* main {
     min-height: calc(100vh - 96px);
-}
+} */
