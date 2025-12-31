@@ -4,9 +4,9 @@ import Title from "./components/Title";
 
 const App = () => {
     return (
-        <div>
+        <div className="flex flex-col min-h-screen">
             <Title />
-            <main className="flex min-h-[calc(100dvh-96px)] items-center justify-center">
+            <main className="flex flex-1 items-center justify-center">
                 <Omikuji />
             </main>
         </div>
