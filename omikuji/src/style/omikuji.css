@@ -1,0 +1,86 @@
+.omikuji-paper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.4s ease;
+}
+
+.omikuji-paper.is-entering {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* ===== Vertical content ===== */
+.omikuji-content {
+    width: 300px;
+    display: flex;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    line-height: 1.9;
+    letter-spacing: 0.05em;
+}
+
+.omikuji-content {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    transition-delay: 0.2s;
+}
+
+.omikuji-paper.is-entering .omikuji-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== 運勢 + 総評（横並びにする核心） ===== */
+.head {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* ← 縦書きの中で「横並び」 */
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+/* ===== Fortune ===== */
+.fortune {
+    /* writing-mode: vertical-rl; */
+    font-size: 44px;
+    font-weight: 800;
+    color: #b30000;
+    letter-spacing: 0.25em;
+    margin: 0;
+}
+
+/* ===== Summary ===== */
+.summary {
+    font-size: 15px;
+    max-inline-size: 12em;
+    margin: 0;
+}
+
+/* ===== Details ===== */
+.details {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-inline-size: 10em;
+}
+
+.label {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.text {
+    font-size: 14px;
+}
